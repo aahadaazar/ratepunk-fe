@@ -1,0 +1,20 @@
+.referralContainerGrey {
+  background: #f8f4f9;
+  border: 1px solid #1f343e;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  & .heading {
+    font-weight: 100;
+    margin: 0px 0px 16px 0px;
+  }
+  & .description {
+    margin: 0px 0px 24px 0px;
+  }
+  & .disclaimer {
+    font-size: 12px;
+    color: #6d7a80;
+    margin: 100px 0px 0px;
+  }
+}

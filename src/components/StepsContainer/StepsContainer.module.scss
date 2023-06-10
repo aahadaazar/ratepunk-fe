@@ -1,0 +1,48 @@
+.stepsColumnContainer {
+  display: flex;
+  max-width: 300px;
+  & .leftColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+
+    & .image {
+      max-width: 100%;
+    }
+  }
+  & .rightColumn {
+    flex: 1;
+    & .text {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &:nth-child(1) {
+        color: #4eb3e3;
+        letter-spacing: 1.6px;
+      }
+      &:nth-child(2) {
+        font-size: 24px;
+      }
+      &:nth-child(3) {
+        font-size: 14px;
+      }
+    }
+  }
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px !important;
+    & .leftColumn {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.emailAddressContainer {
+  & .error {
+    font-size: 10px;
+    visibility: hidden;
+    margin-bottom: 4px;
+    height: 14px;
+    color: #ed6f82;
+    &.errorActive {
+      visibility: visible;
+    }
+  }
+  & .emailWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    & .emailAdornment {
+      position: absolute;
+      left: 8px;
+      top: 10px;
+    }
+    & .emailInput {
+      padding: 10px 10px 10px 35px;
+      margin-bottom: 20px;
+      border: 1px solid #1f343e;
+      border-radius: 4px;
+    }
+    & .validateButton {
+      padding: 12px 0px;
+      border: 1px solid #1f343e;
+      color: white;
+      border-radius: 4px;
+      background: #4eb3e3;
+      font-weight: 600;
+    }
+  }
+}
