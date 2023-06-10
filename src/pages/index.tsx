@@ -4,6 +4,7 @@ import { Caveat_Brush, Noto_Sans } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import Header from "@/components/Header/Header";
 import Body from "@/components/Body/Body";
+import SocialContainer from "@/components/SocialContainer/SocialContainer";
 
 const caveat = Caveat_Brush({ subsets: ["latin"], weight: "400" });
 const noto = Noto_Sans({ subsets: ["latin"], weight: "400" });
@@ -20,6 +21,7 @@ export default function Home() {
       <main className={`${styles.main} ${caveat.className}`}>
         <Header fontType={noto} />
         <Body fontType={noto} />
+        <SocialContainer fontType={noto} />
       </main>
     </>
   );

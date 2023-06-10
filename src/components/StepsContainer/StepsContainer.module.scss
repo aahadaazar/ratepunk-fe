@@ -44,5 +44,10 @@
     & .leftColumn {
       margin: 0;
     }
+    & .rightColumn {
+      & .text {
+        margin: 10px 0px;
+      }
+    }
   }
 }

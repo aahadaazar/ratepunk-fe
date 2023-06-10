@@ -8,8 +8,8 @@ interface StepsContainer extends Common {
   title: string;
   description: string;
   image: string;
-  imageWidth: Number;
-  imageHeight: Number;
+  imageWidth: number;
+  imageHeight: number;
 }
 
 const StepsContainer: FC<StepsContainer> = ({
@@ -25,8 +25,8 @@ const StepsContainer: FC<StepsContainer> = ({
     <div className={styles.stepsColumnContainer}>
       <div className={styles.leftColumn}>
         <Image
-          width={Number(imageWidth)}
-          height={Number(imageHeight)}
+          width={imageWidth}
+          height={imageHeight}
           src={image}
           alt="step-image"
           className={styles.image}

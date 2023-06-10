@@ -1,0 +1,17 @@
+.socialContainer {
+  background: #45565e;
+  border: 1px solid #1f343e;
+  padding: 30px 0px;
+  & .socialChildrenContainer {
+    justify-content: flex-start;
+    color: white;
+    & .reviews {
+      font-size: 15px;
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
